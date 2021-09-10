@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+@font-face {
+  font-family: reg;
+  src: url("assets/fonts/Didot Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: reg;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .serge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 576px) {
+  .hero .serge {
+    width: 100%;
+  }
+}
+
+.hero .intro {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 18rem;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 576px) {
+  .hero .intro {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+.hero .intro h1 {
+  font-size: 3em;
+  margin-bottom: 0 !important;
+}
+
+.hero .intro h3 {
+  margin-top: 0.5rem !important;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.hero .intro p {
+  font-size: 1.2rem;
+  margin: 0.3rem auto;
+}
+
+.hero .intro small {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.hero .sign img {
+  width: 132px;
+}
+
+.hero .social {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5rem;
+  background-color: black;
+  padding: 4rem 5rem !important;
+}
+
+@media screen and (min-width: 992px) {
+  .hero .social {
+    top: 25%;
+    bottom: 25%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero .social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 5rem;
+    bottom: 0;
+    padding: 0 !important;
+  }
+}
+
+.hero .social .media {
+  margin: 0.5rem 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 500px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .social .media div {
+  margin: auto;
+}
+
+.hero .social .media div img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 42px;
+}
+
+.hero .social .media div img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.cs {
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  font-size: 4rem;
+  font-family: 'Heebo', sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+  .cs {
+    font-size: 2rem;
+    right: 25%;
+    left: 25%;
+    bottom: 8rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
