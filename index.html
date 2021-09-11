@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Serge Maurice Lobréau</title>
   </head>
   <body>
@@ -15,17 +16,23 @@
         alt="Serge Maurice Lobréau"
       />
 
-        <span class="cs">Coming soon</span>
+      <span class="cs">Coming soon</span>
 
       <div class="intro">
         <h1>Serge Maurice Lobréau</h1>
         <h3>Founder at SAPIAN GROUP & FLASH GROUP</h3>
 
-        <p>“If you have <strong>NEVER</strong> suffered starvation,</p>
-        <p>you will <strong>NEVER</strong> understand our grit and</p>
-        <p>why enough will <strong>NEVER</strong> Be enough”</p>
+        <p data-aos="fade-right" data-aos-duration="800">
+          “If you have <strong>NEVER</strong> suffered starvation,
+        </p>
+        <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+          you will <strong>NEVER</strong> understand our grit and
+        </p>
+        <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
+          why enough will <strong>NEVER</strong> Be enough”
+        </p>
 
-        <small>Serge Maurice Lobréau</small>
+        <small data-aos="fade-in" data-aos-duration="800" data-aos-delay="1200">Serge Maurice Lobréau</small>
 
         <div class="sign">
           <img src="assets/images/SML.svg" alt="" />
@@ -70,5 +77,10 @@
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

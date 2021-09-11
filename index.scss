@@ -75,11 +75,10 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 5rem;
+    width: 3rem;
     height: fit-content;
-    padding: 5rem;
     background-color: black;
-    padding: 4rem 5rem !important;
+    padding: 1rem 5rem !important;
 
     @include large {
       top: 25%;
@@ -98,9 +97,6 @@ body {
     .media {
       margin: 0.5rem 0;
       //   background-color: white;
-      width: 32px;
-      height: 32px;
-      border-radius: 500px;
       padding: 1rem;
       display: flex;
       justify-content: center;
@@ -124,9 +120,9 @@ body {
   bottom: 5rem;
   font-size: 4rem;
   font-family: 'Heebo', sans-serif;
-
+  text-transform: uppercase;
   @include small{
-      font-size: 2rem;
+      font-size: 1.5rem;
       right: 25%;
       left: 25%;
       bottom: 8rem;
