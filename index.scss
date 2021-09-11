@@ -54,6 +54,10 @@ body {
         font-size: 2.5rem;
         margin-top: 0 !important;
       }
+      @include xs {
+        font-size: 2.5rem;
+        margin-top: -1rem !important;
+      }
     }
 
     h3 {
@@ -107,11 +111,11 @@ body {
     flex-direction: column;
     width: 3rem;
     height: fit-content;
-    background-color: black;
+    // background-color: black;
     padding: 1rem 5rem !important;
 
     @include large {
-      top: 25%;
+      top: 30%;
       bottom: 25%;
     }
 
@@ -134,7 +138,7 @@ body {
         margin: auto;
         img {
           transition: 0.3s;
-          width: 42px;
+          width: 24px;
           &:hover {
             transform: scale(1.2);
           }
@@ -171,7 +175,7 @@ body {
     width: 70%;
 
     @include xs {
-      width: 40%;
+      width: 80%;
     }
   }
   display: none;
