@@ -20,9 +20,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero .serge {
+  display: block;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -32,6 +37,11 @@ body {
 
 @media screen and (max-width: 576px) {
   .hero .serge {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
     width: 100%;
   }
 }
@@ -55,6 +65,14 @@ body {
 .hero .intro h1 {
   font-size: 3em;
   margin-bottom: 0 !important;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 576px) {
+  .hero .intro h1 {
+    font-size: 2.5rem;
+    margin-top: 0 !important;
+  }
 }
 
 .hero .intro h3 {
@@ -63,9 +81,21 @@ body {
   font-weight: 500;
 }
 
+@media screen and (max-width: 576px) {
+  .hero .intro h3 {
+    font-size: 0.8rem;
+  }
+}
+
 .hero .intro p {
   font-size: 1.2rem;
   margin: 0.3rem auto;
+}
+
+@media screen and (max-width: 576px) {
+  .hero .intro p {
+    font-size: 0.9rem;
+  }
 }
 
 .hero .intro small {
@@ -73,8 +103,34 @@ body {
   margin-top: 1rem;
 }
 
+.hero .sign {
+  display: block;
+}
+
+@media screen and (max-width: 576px) {
+  .hero .sign {
+    display: none;
+  }
+}
+
 .hero .sign img {
   width: 132px;
+}
+
+.hero .sign-mobile {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .hero .sign-mobile {
+    display: block;
+  }
+}
+
+.hero .sign-mobile img {
+  width: 84px;
 }
 
 .hero .social {
@@ -148,16 +204,55 @@ body {
   right: 5rem;
   bottom: 5rem;
   font-size: 4rem;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   text-transform: uppercase;
+  display: block;
 }
 
 @media screen and (max-width: 576px) {
   .cs {
+    display: none;
     font-size: 1.5rem;
     right: 25%;
     left: 25%;
     bottom: 8rem;
   }
+}
+
+.hero-mobile {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+  display: none;
+}
+
+.hero-mobile img {
+  opacity: 0.5;
+  width: 70%;
+}
+
+@media screen and (max-height: 731px) {
+  .hero-mobile img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-mobile {
+    display: block;
+  }
+}
+
+.hero-mobile .cs-mobile {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  bottom: 1rem;
+}
+
+.hero-mobile .cs-mobile h1 {
+  font-size: 1.2rem !important;
+  font-family: "Heebo", sans-serif !important;
 }
 /*# sourceMappingURL=index.css.map */
