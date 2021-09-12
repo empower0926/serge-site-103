@@ -107,6 +107,7 @@ body {
 
   .social {
     position: absolute;
+    z-index: 999;
     display: flex;
     flex-direction: column;
     width: 3rem;
